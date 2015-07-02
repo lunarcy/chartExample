@@ -1,0 +1,294 @@
+/* 
+    Document   : style
+    Created on : Oct 6, 2014, 11:00:04 AM
+    Author     : Bin Jiang
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+
+
+root { 
+    display: block;
+}
+
+iframe {
+    background: transparent;
+    border: 0;
+    font-style: inherit;
+    font-weight: inherit;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    vertical-align: baseline;
+}
+
+#chartView {
+    margin-left: 50px;
+}
+
+.dataTables_wrapper {
+    width: 1180px;
+    height: 700px;
+}
+
+caption, th {
+    text-align: left;
+}
+
+tfoot input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+div.alphabet {
+    position: relative;
+    display: table;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+span.rowsTotal, span.rowsAve {
+    color:#0088cc;
+}
+
+div.alphabet span {
+    display: table-cell;
+    color: #3174c7;
+    cursor: pointer;
+    text-align: center;
+    width: 3.5%
+}
+
+div.alphabet span:hover {
+    text-decoration: underline;
+}
+
+div.alphabet span.active {
+    color: black;
+}
+
+div.alphabet span.empty {
+    color: red;
+}
+
+div.alphabetInfo {
+    display: block;
+    position: absolute;
+    background-color: #111;
+    border-radius: 3px;
+    color: white;
+    top: 2em;
+    height: 1.8em;
+    padding-top: 0.4em;
+    text-align: center;
+    z-index: 1;
+}
+
+table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: gray;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+.note {
+    font-size: 0.8em;
+}
+
+#tooltip1b {
+    font-size: 12px;
+    color: rgb(15%, 15%, 15%);
+    padding:2px;
+    background-color: rgba(95%, 95%, 95%, 0.8);
+}
+
+#legend1b td, #legend1b th {
+    border: 1px solid #cdcdcd;
+    padding: 1px 4px;
+}
+
+#legend1b {
+    font-size: 12px;
+    border: 1px solid #cdcdcd;
+    border-collapse: collapse;
+}
+
+/* === CSS for jqPlot === */
+.jqplot-cursor-tooltip {
+    color: #fbcb09;
+}
+
+.jqplot-highlighter {
+    color:#f7ecb5;
+}
+
+.jqplot-highlighter2 {
+    color:#2aabd2;
+}
+
+.jqplot-point-label {
+    border: 1.5px solid #aaaaaa;
+    padding: 1px 3px;
+    background-color:#bce8f1;
+}
+
+.jqplot-title {
+    color:#A0A0A0;
+}
+
+.jqplot-xaxis {
+    color:#2aabd2;
+}
+
+#resizable1 { 
+    width: 600px; 
+    height: 420px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding: 1.2em;
+}
+
+#resizable2 { 
+    width: 600px; 
+    height: 450px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding: 1.2em;
+}
+
+.ui-resizable-helper {
+    border: 2px solid gray;
+}
+
+.gradientOrange {
+    /* can be treated like a fallback */
+    background-color: red;
+    /* will be "on top", if browser supports it */
+    background-image: linear-gradient(red, orange);
+    /* these will reset other properties, like background-position, but it does know what you mean */
+    background: red;
+    background: linear-gradient(red, orange);
+}
+
+.gradientBlue {
+    /* can be treated like a fallback */
+    background-color: blue;
+    /* will be "on top", if browser supports it */
+    background-image: linear-gradient(blue, skyblue);
+    /* these will reset other properties, like background-position, but it does know what you mean */
+    background: blue;
+    background: linear-gradient(blue, skyblue);
+}
+
+.orangeBtn {
+    -moz-box-shadow:inset 0px 1px 0px 0px #fce2c1;
+    -webkit-box-shadow:inset 0px 1px 0px 0px #fce2c1;
+    box-shadow:inset 0px 1px 0px 0px #fce2c1;
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ffc477), color-stop(1, #fb9e25) );
+    background:-moz-linear-gradient( center top, #ffc477 5%, #fb9e25 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffc477', endColorstr='#fb9e25');
+    background-color:#ffc477;
+    -webkit-border-top-left-radius:20px;
+    -moz-border-radius-topleft:20px;
+    border-top-left-radius:20px;
+    -webkit-border-top-right-radius:20px;
+    -moz-border-radius-topright:20px;
+    border-top-right-radius:20px;
+    -webkit-border-bottom-right-radius:20px;
+    -moz-border-radius-bottomright:20px;
+    border-bottom-right-radius:20px;
+    -webkit-border-bottom-left-radius:20px;
+    -moz-border-radius-bottomleft:20px;
+    border-bottom-left-radius:20px;
+    text-indent:0;
+    border:1px solid #eeb44f;
+    display:inline-block;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:13px;
+    font-weight:bold;
+    font-style:normal;
+    height:40px;
+    line-height:40px;
+    width:100px;
+    text-decoration:none;
+    text-align:center;
+    text-shadow:1px 1px 0px #cc9f52;
+    margin: 5px 5px 5px 5px;
+}
+.orangeBtn:hover {
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #fb9e25), color-stop(1, #ffc477) );
+    background:-moz-linear-gradient( center top, #fb9e25 5%, #ffc477 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fb9e25', endColorstr='#ffc477');
+    background-color:#fb9e25;
+}
+.orangeBtn:active {
+    position:relative;
+    top:1px;
+}
+
+.blueBtn {
+    -moz-box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+    -webkit-box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+    box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #79bbff), color-stop(1, #378de5) );
+    background:-moz-linear-gradient( center top, #79bbff 5%, #378de5 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#79bbff', endColorstr='#378de5');
+    background-color:#79bbff;
+    -webkit-border-top-left-radius:20px;
+    -moz-border-radius-topleft:20px;
+    border-top-left-radius:20px;
+    -webkit-border-top-right-radius:20px;
+    -moz-border-radius-topright:20px;
+    border-top-right-radius:20px;
+    -webkit-border-bottom-right-radius:20px;
+    -moz-border-radius-bottomright:20px;
+    border-bottom-right-radius:20px;
+    -webkit-border-bottom-left-radius:20px;
+    -moz-border-radius-bottomleft:20px;
+    border-bottom-left-radius:20px;
+    text-indent:0;
+    border:1px solid #84bbf3;
+    display:inline-block;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:13px;
+    font-weight:bold;
+    font-style:normal;
+    height:40px;
+    line-height:40px;
+    width:100px;
+    text-decoration:none;
+    text-align:center;
+    text-shadow:1px 1px 0px #528ecc;
+    margin: 5px 5px 5px 5px;
+}
+.blueBtn:hover {
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #378de5), color-stop(1, #79bbff) );
+    background:-moz-linear-gradient( center top, #378de5 5%, #79bbff 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#378de5', endColorstr='#79bbff');
+    background-color:#378de5;
+}
+.blueBtn:active {
+    position:relative;
+    top:1px;
+}
+
+#refresh {
+    background-color:#aaaaaa;
+    background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #aaaaaa), color-stop(1, #aaaaaa) );
+    border: 1px solid #aaaaaa;
+    box-shadow: inset 0px 1px 0px 0px #aaaaaa;
+    text-shadow: 1px 1px 0px #aaaaaa;
+    height:30px;
+    line-height:30px;
+    width:80px;
+}
